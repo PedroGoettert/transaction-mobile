@@ -36,7 +36,7 @@ export default function Login() {
 	async function handleSubmitLogin(dataForm: LoginSchema) {
 		try {
 			setIsLoading(true);
-			const response = await fetch("http://192.168.0.124:3333/login", {
+			const response = await fetch("http://172.20.10.5.3333/login", {
 				method: "POST",
 				body: JSON.stringify(dataForm),
 				headers: {
@@ -165,7 +165,7 @@ const styles = StyleSheet.create({
 	form: {
 		flex: 1,
 		paddingTop: 12,
-		backgroundColor: colors.white,
+		backgroundColor: colors.text,
 		borderRadius: 30,
 		paddingHorizontal: 16,
 	},

@@ -1,5 +1,5 @@
 export const colors = {
-	white: "#FFFFFF",
+	text: "#FFFFFF",
 	black: "#000000",
 
 	purple: {
@@ -19,18 +19,30 @@ export const colors = {
 	},
 
 	green: {
-		100: "#64FFDA", // Verde-água mais claro
-		200: "#00BFA5", // Verde-água principal
-		300: "#00897B", // Verde-água mais escuro
+		50: "#E6FFFA",
+		100: "#B2F5EA",
+		200: "#64FFDA",
+		300: "#00BFA5",
+		400: "#00897B",
+		500: "#00796B",
+		600: "#00695C",
+		700: "#004D40",
 	},
 
 	gray: {
-		100: "#F5F5F5", // Cinza mais claro
-		200: "#E0E0E0",
-		300: "#BDBDBD",
-		400: "#9E9E9E",
-		500: "#757575",
-		600: "#616161",
-		700: "#424242", // Cinza mais escuro
+		50: "#FAFAFA", // Fundo primário (ex: tela inteira)
+		100: "#F5F5F5", // Fundo secundário (ex: cards, listas)
+		200: "#EEEEEE", // Bordas sutis ou divisores entre seções
+
+		// Tons médios (para elementos interativos/auxiliares)
+		300: "#E0E0E0", // Ícones inativos, placeholders
+		400: "#BDBDBD", // Textos secundários (subtítulos, hints)
+		500: "#9E9E9E", // Bordas de inputs não focados
+
+		// Tons escuros (para conteúdo primário e ênfase)
+		600: "#757575", // Textos corporativos (não primários)
+		700: "#616161", // Textos principais (títulos, botões)
+		800: "#424242", // Cabeçalhos, textos de alta importância
+		900: "#212121", // Textos em dark mode ou overlays
 	},
 };

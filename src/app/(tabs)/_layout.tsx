@@ -9,9 +9,11 @@ export default function layout() {
 				headerShown: false,
 				tabBarShowLabel: false,
 				tabBarStyle: {
-					backgroundColor: colors.gray[400],
+					backgroundColor: colors.gray[300],
 					paddingTop: 14,
 				},
+				tabBarInactiveTintColor: colors.black[200],
+				tabBarActiveTintColor: colors.green[400],
 			}}
 		>
 			<Tabs.Screen
@@ -28,6 +30,15 @@ export default function layout() {
 				options={{
 					tabBarIcon: ({ color, size }) => (
 						<Feather name="plus-circle" color={color} size={size} />
+					),
+				}}
+			/>
+
+			<Tabs.Screen
+				name="extract"
+				options={{
+					tabBarIcon: ({ color, size }) => (
+						<Feather name="bar-chart-2" color={color} size={size} />
 					),
 				}}
 			/>
