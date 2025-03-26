@@ -14,6 +14,9 @@ export default function layout() {
 				},
 				tabBarInactiveTintColor: colors.black[200],
 				tabBarActiveTintColor: colors.green[400],
+				sceneStyle: {
+					backgroundColor: colors.gray[800],
+				},
 			}}
 		>
 			<Tabs.Screen
